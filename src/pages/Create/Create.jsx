@@ -45,8 +45,8 @@ const Create = () => {
   const [data,setData] = useState([])
   useEffect(() => {
     const funciona = async() => {
-   const {data} = await axios.get(`http://localhost:3001/users/instructors`)
-   const cats = await axios.get(`http://localhost:3001/categories`)
+   const {data} = await axios.get(`/users/instructors`)
+   const cats = await axios.get(`/categories`)
     setCats(cats.data)
     setData(data)}
    funciona()

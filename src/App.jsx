@@ -6,6 +6,8 @@ import Detail from './pages/Detail/Detail'
 
 function App() {
 
+  
+
   return (
     <>
       <Layout>

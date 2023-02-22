@@ -18,9 +18,9 @@ export default  function Detail() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const curso =  await axios.get(`http://localhost:3001/courses/detail/${id}`)
-        const reviews = await axios.get(`http://localhost:3001/reviews/related/${id}`)
-        const rela = await axios.get(`http://localhost:3001/categories/co/${id}`)
+        const curso =  await axios.get(`/courses/detail/${id}`)
+        const reviews = await axios.get(`/reviews/related/${id}`)
+        const rela = await axios.get(`/categories/co/${id}`)
         setCourse(curso.data);
         setReview(reviews.data);
         setRelated(rela.data)
